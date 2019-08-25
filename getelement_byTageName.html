@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+
+    <script>
+        function shah()
+        {
+            
+            var para = document.getElementsByTagName('p');
+            para[0].style.fontSize = 29;
+            para[1].style.color ='aqua';
+            para[2].style.fontWeight='bold';
+            para[3].style.fontStyle='italic';
+            para[4].style.color='yellow';
+            para[5].style.fontSize=33;
+            para[5].style.fontFamily='underline';
+
+
+            // by function.....
+            for(var i=0;i<para.length;i++)
+                para[i].style.fontSize = 33;
+           
+            
+            
+        }
+    </script>
+    <p>this is shah alam 1</p>
+    <p>this is shah alam 2</p>
+    <p>this is shah alam 3</p>
+    <p>this is shah alam 4</p>
+    <p>this is shah alam 5</p>
+    <p>this is shah alam 6</p>
+    <button onclick="shah()">click here</button>
+
+</body>
+
+</html>
