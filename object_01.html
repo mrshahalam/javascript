@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>object in js</title>
+
+<body>
+    <script>
+     
+    
+   // objects in javascript........
+     var car = {
+         brand:'tesla',
+         model:'sdjhv7475',
+         price:9845546,
+         autopilote : function()
+         {
+             document.write('our car is autopilote')
+         }
+     }
+      car.fueltype='electrical';  // adding the value after  declaring the object
+      delete car.price;  // deleting the object property..
+     document.write(car.fueltype)
+     car.autopilote();
+
+
+     //  construction function   
+
+    function carr(brand, model, price)
+    {
+      this.brand=brand;
+      this.model=model;
+      this.price=price;
+      this.autopilote=Function()
+      {
+          document.write('by construction function');
+      }
+    }
+    // calling the construction function....
+    var y = new carr('brand','price','model')
+    y.autopilote();
+    document.write(carr.brand)
+    typeof(carr);
+    
+    </script>
+</body>
+</head>
+
+</html>
