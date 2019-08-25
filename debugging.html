@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>debugging in javascript </title>
+    <script>
+        function shah()
+        {
+             var a = document.getElementById('in').value;
+            var b = document.getElementById('inn').value;
+
+            document.getElementById('h1').innerHTML = "Result =" + (a+b);
+        }
+
+    
+    </script>
+</head>
+<body>
+    <input type="text" id="in" placeholder="text 1" required>
+   <br>
+   <br>
+    <input type="text" id="inn" placeholder="text 2" required>
+    <br>
+    <br>
+    <button onclick="shah()" id="btn"> Add</button>
+    <br>
+    <h1 id="h1">Result = </h1>
+</body>
+</html>
