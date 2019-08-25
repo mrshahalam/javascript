@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+       
+        <script>
+           
+           function shah()
+           {
+               var sa = document.getElementById('sa');
+               var ak = document.getElementById('ak');
+               var fa = document.getElementById('fa');
+               if(sa.checked==true)
+                    alert('you choose :' +sa.value);
+               else if(ak.checked==true)
+                    alert('you choose :'+ak.value);
+               else 
+                    alert('you choose :'+fa.value) ;
+
+           }
+            
+        </script>
+        <input type="radio" id="sa" name="a" value="shah alam">shah alam</input>
+        <input type="radio" id="ak" name="a" value="ahmad kabeer">ahmad kabeer</input>
+        <input type="radio" id="fa" name="a" value="faizan">faizan</input>
+        <!--name attribute for choosing the single radio button-->
+        <br>
+        <br>
+        <button id="bnt" onclick="shah()">click here</button>
+    </body>
+</html>
