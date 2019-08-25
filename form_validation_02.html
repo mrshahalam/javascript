@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>form validation</title>
+
+<body>
+
+
+    <form onsubmit=" return shah();" action="message.html">
+
+
+
+        Enter your name : <input type="text" id="in" placeholder="username">
+        <br>
+        <label id="lb" style="color: red; visibility: hidden;">Invalid username</label>
+        <br>
+        Enter your password :<input type="password" id="ps" placeholder="password">
+        <br>
+        <label id="lp" style="color: red; visibility: hidden;">Invalid password</label>
+        <br>
+        <br>
+        <button type="submit">click me</button>
+
+    </form>
+      <script>
+        function shah()
+        {
+           var uname = document.getElementById('in')
+           var pword = document.getElementById('ps')
+           if(uname.value.trim()=="")
+           {
+             //alert('Blank username');
+             document.getElementById('lb').style.visibility="visible";
+             uname.style.border="solid 2px red"
+             return false;
+           }
+           else if(pword.value.trim() == "")  // main property...................
+
+             {
+               //alert('Blank password');
+               document.getElementById('lp').style.visibility="visible";
+               pword.style.border = "solid 2px red"
+               return false;
+            
+             }
+             else if(pword.value.trim().length<5)
+             {
+                  alert('password too short');
+                  return false;
+             }
+             else
+             {
+                     return true;
+             }
+
+           
+        }
+      </script>
+
+</body>
+</head>
+
+</html>
