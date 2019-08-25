@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> email validation validation...</title>
+    <script>
+        /*
+        \d -  match any digit (equal to [0-9])
+        \w match any word character (a-z,A-Z, 0-9 & _)
+        \s - match whitespace  character ( eg -space & tabs)
+        \t  - match a tab only 
+    
+        */
+        function shah() 
+        {
+            var s = document.getElementById('in').value;
+            var regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]){2-20}$/;
+            
+            // dollar sign represent the end of the string ok
+
+
+
+            if (regx.test(s)) {
+                document.getElementById('lb').innerHTML = "valid  number "
+                document.getElementById('lb').style.visibility = "visible";
+                document.getElementById('lb').style.color = "green";
+            }
+            else {
+                document.getElementById('lb').innerHTML = "Invalid number"
+                document.getElementById('lb').style.visibility = "visible";
+                document.getElementById('lb').style.color = "red";
+            }
+
+
+        }
+    </script>
+
+</head>
+
+
+ <body>
+    <form>
+    Email Id: <input type="text" id="in" placeholder="email@gmail.com">
+    <br>
+    <label id="lb" style="color: red;visibility:hidden">Invalid Email</label>
+    <br>
+    <button onclick="shah()" type="button">click here</button>
+    </form>
+  </body>
+
+</html>
