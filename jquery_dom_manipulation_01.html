@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Dom manipulation part  one in jquery</title>
+     <script src="jQuery.js"></script>
+     <!--
+            task which are performing below....
+      1. text
+      2. html()
+      3. attr()
+      4. css()
+     -->
+     <style>
+     .mydiv{
+         border: solid rgb(39, 18, 226) 2px;
+     }
+     
+     </style>
+
+</head>
+<body>
+    <h1>jQuery -DOM manipulation</h1>
+    <button id="btn">Action</button>
+    <br>
+    <br>
+    <div class="mydiv" id="me">
+        <p class="p1" value='tooo'>
+            this is the third para <b> shah alam</b>   grapg of the function
+        </p>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                //alert($('p').text());
+              //$('p').text('you see the text is just change...@@');
+              //$('p').html('hellow world <i> shah alam </i> ');
+               //alert($('.mydiv').attr('p1'));
+                alert($('.mydiv').css('font-size'));
+            });
+
+
+        });
+    
+    
+    </script>
+    
+</body>
+</html>
