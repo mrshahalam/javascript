@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>selector in jquery</title>
+    <style>
+    .div{
+        border: solid black 2px;
+        margin:5px;
+        padding: 10px;
+
+    }
+    .second{
+        border: dashed rgb(46, 25, 231) 2px;
+         margin:5px;
+        padding: 10px;
+    }
+    .thirdpara
+    {
+        color:rgb(58, 224, 36);
+        border: solid rgb(223, 15, 129) 2px;
+         margin:5px;
+        padding: 10px;
+    }
+    
+    </style>
+        <script src="jQuery.js"></script>
+
+    <script>
+        function shah()
+        {
+            //$('.div').fadeToggle(1000)
+            //$('.div,.second').fadeToggle(1000)
+            // $('.div:even').fadeToggle(1000)  // for even line    odd for odd number event
+            $('li:even').fadeToggle(1000);
+
+        }
+    
+    
+    </script>
+</head>
+<body>
+    <div class="div" id="me">
+        <p>
+          this is me shsha alam name to suna hi hoga ok bro bullshit what the fuck u are doing here ???????
+        </p>
+        <p>you mother fucker  guilty plz leave this , i say go from here right now ok</p>
+      
+    </div>
+    <br>
+    <br>
+    <div class="second">
+        this s third para graph ok bro what are you saying to meee plz speak loudely 
+    </div>
+    <br><br>
+    <div class="thirdpara">
+        hellow so their ar some some list item below pick some item and
+        enjoy the life dude
+        <ul>
+            <li>list item 1</li> 
+
+            <li>list item 2</li>
+
+            <li>list item 3</li>
+
+            <li>list item 4</li>
+
+            <li>list item 15</li>
+
+        
+        </ul>
+    </div>
+    <br><br>
+    <button onclick="shah()">click me</button>
+    
+</body>
+</html>
