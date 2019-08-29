@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <style>
+        .first {
+            border: solid royalblue 2px;
+            padding: 8px;
+            margin: 5px;
+            background-color: aqua;
+            height: 80px;
+            width: 90px;
+            text-align: center;
+        }
+
+        .sec {
+            border: solid rgb(18, 20, 19) 2px;
+            padding: 8px;
+            margin: 5px;
+            background-color: blueviolet;
+            height: 80px;
+            width: 90px;
+            text-align: center;
+
+        }
+
+        
+        .third{
+             border: solid black 2px;
+            margin: 6px;
+            padding: 8px;
+            height: 80px;
+            width: 90px;
+            text-align: center;
+            background-color: yellow;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jQuery.js"></script>
+    <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+
+    <h1>Draggable feature in jquery -ui in javascript</h1>
+        <div class="first">
+            nature
+        </div>
+        <div class="sec">
+
+            bridge
+        </div>
+        <div class="third">
+        
+            bridge
+        </div>
+    <script>
+        $('.first').sortable({
+            opacity:0.5,
+            distance:50,
+            delay:300,
+            containment:"parent",
+            cursor:"grabbing",
+        });
+       
+    </script>
+
+</body>
+
+</html>
